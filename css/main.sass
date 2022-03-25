@@ -1,0 +1,124 @@
+
+* 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Roboto', Arial, Helvetica, sans-serif 
+	overflow: hidden
+
+.app 
+	display: flex
+	flex-direction: column
+	width: 100vw                        // vw - относительная единица ширины окна, соответствует 1% от ширины области просмотра браузера
+	height: 100vh						// vh - относительная единица высоты окна
+	padding: 50px 0
+	background: url('../img/1.jpg') center / cover no-repeat
+	.boards
+		display: flex
+		width: 100%
+		&__item
+			display: flex
+			flex-direction: column       	// колонка
+			align-self: baseline		 	// align-self выравнивает флекс-элементы текущей строки.  baseline- элемент выравнивается по базовой линии текста.
+			max-width: 250px
+			width: 100%
+			background-color: rgba(0,0 ,0 , .5)
+			margin: 0 15px
+			padding: 10px	
+			transition: .3s all ease
+			border-radius: 5px	
+			.title
+				padding: 15px
+				color: white
+				&:focus
+					outline: 1px solid rgba(168,168,168, .4)
+			.list
+				min-height: 40px
+				&__item
+					background-color: #fefefe
+					border-radius: 5px
+					padding: 10px
+					text-align: center
+					margin: 4px 0
+					cursor: 
+					font-size: 14px
+					outline: none	
+					border: none
+			.form
+				border-radius: 3px
+				margin-top: auto
+				display: none
+				.textarea
+					resize: none
+					height: 60px
+					border-radius: 3px
+					border: none
+					padding: 10px
+					width: 100%
+					&:focus
+						outline: none
+				.buttons
+					display: flex
+					.add__item-btn
+						background: rgb(13, 136, 218)
+						border: none
+						height: 35px
+						cursor: pointer
+						color: white
+						border-radius: 3px
+						display: flex
+						justify-content: center
+						align-items: center
+						margin-right: 10px
+						width: 100%
+					.cancel__item-btn
+						padding: 0 10px
+						background: rgb(160, 17, 12)
+						border: none
+						height: 35px
+						cursor: pointer
+						color: white						
+						border-radius: 3px
+						display: flex
+						justify-content: center
+						align-items: center
+						width: 75px
+						margin-left: auto
+						flex-shrink: 0
+			.add__btn
+				height: 30px
+				background: rgba(155, 155 ,155 , .4 )
+				border-radius: 3px
+				margin-top: 5px
+				display: flex
+				font-size: 12px
+				align-items: center
+				padding-left: 10px
+				color: white
+				cursor: pointer
+				span
+					font-size: 20px
+					margin-right: 10px
+					color: white
+	.btn
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 35px
+		background: rgba(19,30 ,204 , .6)
+		cursor: pointer
+		width: 150px
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translate(-50%)
+		background-color: white
+		border-radius: 3px
+		font-size: 14px
+
+		
+
+
+
+
+
